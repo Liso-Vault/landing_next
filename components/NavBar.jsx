@@ -1,25 +1,31 @@
 import Logo from "../assets/logo.png";
 import Image from "next/image";
 
+import * as ga from "../lib/ga";
+
 export const NavBar = ({ refDownload, refPricing }) => {
   function scrollToDownloadSection(params) {
     refDownload.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
-    // ReactGA.event({
-    //   category: "Download",
-    //   action: "Scroll to Download",
-    //   label: "Download Button",
-    // });
+    ga.event({
+      action: "scroll to download",
+      params: {
+        component: "navbar",
+        element: "free download button",
+      },
+    });
   }
 
   function scrollToPricingSection(params) {
     refPricing.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
-    // ReactGA.event({
-    //   category: "Download",
-    //   action: "Scroll to Download",
-    //   label: "Download Button",
-    // });
+    ga.event({
+      action: "scroll to pricing",
+      params: {
+        component: "navbar",
+        element: "pricing button",
+      },
+    });
   }
 
   return (
@@ -28,10 +34,7 @@ export const NavBar = ({ refDownload, refPricing }) => {
         <Image src={Logo} alt="Liso Password Manager" />
       </div>
       <h1 className="w-full text-2xl md:text-4xl font-bold text-white">Liso</h1>
-      <button
-        className="btn-text mr-3"
-        onClick={scrollToPricingSection}
-      >
+      <button className="btn-text mr-3" onClick={scrollToPricingSection}>
         Pricing
       </button>
       <button

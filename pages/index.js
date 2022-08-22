@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 
 // COMPONENTS
@@ -35,11 +35,6 @@ import {
 } from "iconsax-react";
 
 export default function Home() {
-  // Google Analytics
-  useEffect(() => {
-    // ReactGA.initialize("UA-184101390-1");
-  }, []);
-
   const DownloadSectionRef = useRef(null);
   const FeaturesSectionRef = useRef(null);
   const PricingSectionRef = useRef(null);
@@ -55,7 +50,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-
         <meta name="description" content={description} />
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,7 +71,6 @@ export default function Home() {
         <meta name="twitter:image" content="/opengraph.jpg" />
 
         <link rel="manifest" href="/manifest.json" />
-
         <title>Open Source & Encrypted Password Manager | Liso</title>
       </Head>
 

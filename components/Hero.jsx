@@ -1,24 +1,28 @@
-// import ReactGA from "react-ga";
+import * as ga from "../lib/ga";
 
 export const Hero = ({ refDownload, refFeatures }) => {
   function scrollToDownloadSection(params) {
     refDownload.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
-    // ReactGA.event({
-    //   category: "Download",
-    //   action: "Scroll to Download",
-    //   label: "Get Started Button",
-    // });
+    ga.event({
+      action: "scroll to download",
+      params: {
+        component: "hero",
+        element: "get started button",
+      },
+    });
   }
 
   function scrollToFeaturesSection(params) {
     refFeatures.current.scrollIntoView({ behavior: "smooth" });
 
-    // ReactGA.event({
-    //   category: "Features",
-    //   action: "Scroll to Features",
-    //   label: "Features Button",
-    // });
+    ga.event({
+      action: "scroll to features",
+      params: {
+        component: "hero",
+        element: "features button",
+      },
+    });
   }
 
   return (
@@ -28,8 +32,8 @@ export const Hero = ({ refDownload, refFeatures }) => {
           The secure way to save passwords and more
         </h1>
         <p className="text-gray-300 text-2xl">
-          Protect your valuable data from prying eyes. Liso&apos;s secure data vault
-          is the perfect place to store passwords, files and any other
+          Protect your valuable data from prying eyes. Liso&apos;s secure data
+          vault is the perfect place to store passwords, files and any other
           information you need to keep safe.
         </p>
         <div className="flex gap-2 md:gap-5 flex-wrap mx-auto">

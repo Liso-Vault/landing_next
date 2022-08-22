@@ -1,14 +1,15 @@
-// import ReactGA from "react-ga";
+import * as ga from "../lib/ga";
 
 import { Apple, GooglePlay, Windows } from "iconsax-react";
 
 function gaTrackEvent(data) {
-  // ReactGA.event({
-  //   category: "Dowmload",
-  //   action: "Initiate Download",
-  //   label: "Download Button",
-  //   value: data,
-  // });
+  ga.event({
+    action: "initiate download",
+    params: {
+      component: "download",
+      element: data,
+    },
+  });
 }
 
 export const Download = ({ refDownload }) => {
@@ -21,8 +22,7 @@ export const Download = ({ refDownload }) => {
         Download Now
       </h1>
       <h3 className="text-xl text-center text-gray-300">
-        No credit card or sign up is required to get started.
-        free.
+        No credit card or sign up is required to get started. free.
       </h3>
       <div className="flex flex-wrap items-center gap-5 text-white">
         <a

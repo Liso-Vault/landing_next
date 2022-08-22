@@ -1,4 +1,5 @@
 import React from "react";
+import * as ga from "../lib/ga";
 
 // ICONS
 import { BsCheck2, BsCheck2Circle } from "react-icons/bs";
@@ -247,6 +248,7 @@ export const Pricing = ({ refPricing, refDownload }) => {
       <div className="flex gap-10 flex-wrap mx-auto w-fit text-white justify-center">
         {/* FREE */}
         <PricingHeader
+          refDownload={refDownload}
           data={{
             title: "Free",
             subTitle: "No Credit Card Required",
@@ -254,10 +256,10 @@ export const Pricing = ({ refPricing, refDownload }) => {
             price: "$0.0 Forever",
             features: freeFeatures,
           }}
-          refDownload={refDownload}
         />
         {/* PRO */}
         <PricingHeader
+          refDownload={refDownload}
           data={{
             title: "Liso Pro",
             subTitle: "7 Days Free Trial",
@@ -266,7 +268,6 @@ export const Pricing = ({ refPricing, refDownload }) => {
             features: proFeatures,
             highlighted: true,
           }}
-          refDownload={refDownload}
         />
       </div>
     </div>
@@ -277,11 +278,13 @@ export const PricingHeader = ({ data, refDownload }) => {
   function scrollToDownloadSection() {
     refDownload.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
-    // ReactGA.event({
-    //   category: "Download",
-    //   action: "Scroll to Download",
-    //   label: "CTA Download Button",
-    // });
+    ga.event({
+      action: "scroll to download",
+      params: {
+        component: "pricing",
+        element: data.highlighted ? "pro" : "free" + " button",
+      },
+    });
   }
 
   return (

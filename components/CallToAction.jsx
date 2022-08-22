@@ -1,4 +1,4 @@
-// import ReactGA from "react-ga";
+import * as ga from "../lib/ga";
 
 import Image from "next/image";
 import Logo from "../assets/logo.png";
@@ -7,11 +7,13 @@ export const CallToAction = ({ refDownload }) => {
   function scrollToDownloadSection(params) {
     refDownload.current.scrollIntoView({ behavior: "smooth", block: "center" });
 
-    // ReactGA.event({
-    //   category: "Download",
-    //   action: "Scroll to Download",
-    //   label: "CTA Download Button",
-    // });
+    ga.event({
+      action: "scroll to download",
+      params: {
+        component: "call to action",
+        element: "download button",
+      },
+    });
   }
 
   return (
