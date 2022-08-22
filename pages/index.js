@@ -52,7 +52,7 @@ export default function Home() {
     <div className="bg-gradient">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
@@ -61,7 +61,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content={title} />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="apple-touch-icon" href="./logo192.png" />
 
         <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
@@ -76,7 +76,7 @@ export default function Home() {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content="/opengraph.jpg" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
 
         <title>Open Source & Encrypted Password Manager | Liso</title>
       </Head>
