@@ -41,7 +41,7 @@ export default function Home() {
 
   const title = "Liso Password Manager";
   const description =
-    "Liso is an open-source and encrypted password manager, digital vault, and form filler that's designed to secure your data using modern Web3 technologies. Available on iPhone, iPad, Mac, Android, and Windows.";
+    "Liso is an open-source and encrypted password manager, digital vault, and form filler that's designed to secure your data using modern Web3 technologies.";
 
   return (
     <div className="bg-gradient">
