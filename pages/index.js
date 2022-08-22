@@ -235,7 +235,7 @@ export default function Home() {
           },
         ]}
       />
-      <Spacer classes="h-[50px] md:h-[100px]" />
+      {/* <Spacer classes="h-[50px] md:h-[100px]" /> */}
       <Pricing
         refPricing={PricingSectionRef}
         refDownload={DownloadSectionRef}

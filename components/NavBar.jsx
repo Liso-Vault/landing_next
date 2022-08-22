@@ -17,7 +17,7 @@ export const NavBar = ({ refDownload, refPricing }) => {
   }
 
   function scrollToPricingSection(params) {
-    refPricing.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    refPricing.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
     ga.event({
       action: "scroll to pricing",

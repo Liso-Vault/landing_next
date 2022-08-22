@@ -238,7 +238,7 @@ export const Pricing = ({ refPricing, refDownload }) => {
 
   return (
     <div ref={refPricing} className="">
-      <h1 className="text-4xl md:text-5xl font-bold text-center txt-gradient-3 mb-3">
+      <h1 className="text-4xl md:text-5xl font-bold text-center txt-gradient-3 mb-3 pt-20">
         Simple Pricing
       </h1>
       <h2 className="text-1xl md:text-2xl font-semibold text-center text-white mb-10 flex justify-center">
