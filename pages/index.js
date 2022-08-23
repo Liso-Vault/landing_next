@@ -38,7 +38,9 @@ export default function Home() {
   const DownloadSectionRef = useRef(null);
   const FeaturesSectionRef = useRef(null);
   const PricingSectionRef = useRef(null);
-
+  
+  const domain = "liso.dev";
+  const url = "https://" + domain;
   const title = "Liso Password Manager";
   const description =
     "Liso is an open-source and encrypted password manager, digital vault, and form filler that's designed to secure your data using modern Web3 technologies.";
@@ -47,7 +49,7 @@ export default function Home() {
     <div className="bg-gradient">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="https://liso.dev/favicon.ico" />
+        <link rel="icon" href={url + "/favicon.ico"} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="description" content={description} />
@@ -55,22 +57,22 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content={title} />
-        <link rel="apple-touch-icon" href="https://liso.dev/logo192.png" />
+        <link rel="apple-touch-icon" href={url + "/logo192.png"} />
 
         <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://liso.dev/opengraph.jpg" />
+        <meta property="og:image" content={url + "/opengraph.jpg"} />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="liso.dev" />
-        <meta property="twitter:url" content="https://liso.dev/" />
+        <meta property="twitter:domain" content={domain} />
+        <meta property="twitter:url" content={url} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://liso.dev/opengraph.jpg" />
+        <meta name="twitter:image" content={url + "/opengraph.jpg"} />
 
-        <link rel="manifest" href="https://liso.dev/manifest.json" />
+        <link rel="manifest" href={url + "/manifest.json"} />
         <title>Open Source & Encrypted Password Manager | Liso</title>
       </Head>
 
