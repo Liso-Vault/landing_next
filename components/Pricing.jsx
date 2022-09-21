@@ -241,11 +241,11 @@ export const Pricing = ({ refPricing, refDownload }) => {
       <h1 className="text-4xl md:text-5xl font-bold text-center txt-gradient-3 mb-3 pt-20">
         Simple Pricing
       </h1>
-      <h2 className="text-1xl md:text-2xl font-semibold text-center text-white mb-10 flex justify-center">
+      <h2 className="text-1xl md:text-2xl font-semibold text-center text-gray-700 mb-10 flex justify-center">
         <span>And the most affordable price guaranteed</span>
-        <BsCheck2Circle color="#02f297" className="w-6 h-6 ml-2 my-auto" />
+        <BsCheck2Circle color="#27be84" className="w-6 h-6 ml-2 my-auto" />
       </h2>
-      <div className="flex gap-10 flex-wrap mx-auto w-fit text-white justify-center">
+      <div className="flex gap-10 flex-wrap mx-auto w-fit text-gray-700 justify-center">
         {/* FREE */}
         <PricingHeader
           refDownload={refDownload}
@@ -291,16 +291,16 @@ export const PricingHeader = ({ data, refDownload }) => {
     <div
       className={`${
         data.highlighted
-          ? "border-4 border-[#02f297]"
+          ? "border-4 border-[#27be84]"
           : "border border-gray-500"
       } rounded-[20px] p-5 space-y-2`}
     >
-      <h3 className={`font-bold text-2xl text-[#02f297]`}>{data.title}</h3>
+      <h3 className={`font-bold text-2xl text-[#27be84]`}>{data.title}</h3>
       <h3 className="font-bold text-4xl">{data.price}</h3>
-      <h6 className="font-bold text-white card bg-gray-800 w-fit px-5 py-1">
+      <h6 className="font-bold text-white card bg-gray-500 w-fit px-5 py-1">
         {data.subTitle}
       </h6>
-      <h6 className="text-xs font-semibold text-gray-300">{data.subTitle2}</h6>
+      <h6 className="text-xs font-semibold text-gray-700">{data.subTitle2}</h6>
       <ul className="space-y-2 py-5">
         {data.features.map((e, i) => (
           <FeatureItem data={e} key={i} />
@@ -324,14 +324,14 @@ export const FeatureItem = ({ data }) => {
   if (data.value == "excluded") {
     value = <CgClose color="white" className="w-5 h-5" />;
   } else if (data.value == "included") {
-    value = <BsCheck2 color="#02f297" className="w-6 h-6" />;
+    value = <BsCheck2 color="#27be84" className="w-6 h-6" />;
   }
 
   return (
     <div className="flex text-sm md:text-base">
-      <data.icon size={25} color="#02f297" />
-      <span className="ml-5 min-w-[190px] text-white">{data.feature}</span>
-      <span className="text-[#02f297] font-semibold mx-auto">{value}</span>
+      <data.icon size={25} color="#27be84" />
+      <span className="ml-5 min-w-[190px] text-gray-700">{data.feature}</span>
+      <span className="text-[#27be84] font-semibold mx-auto">{value}</span>
     </div>
   );
 };

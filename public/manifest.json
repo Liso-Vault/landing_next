@@ -1,6 +1,6 @@
 {
-  "short_name": "Liso Password Manager",
-  "name": "Liso is an open source password manager, digital vault, and form filler that's designed to secure your information using modern Web3 technologies.",
+  "short_name": "Liso - Encrypted Private Vault",
+  "name": "Protect your valuable data from prying eyes. Liso's secure data vault is the perfect place to keep passwords, files, and any other data you need to keep safe.",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

@@ -26,16 +26,18 @@ export const Hero = ({ refDownload, refFeatures }) => {
   }
 
   return (
-    <div className="text-white">
+    <div className="">
       <div className="max-w-[1000px] w-full md:mt-[100px] mt-[40px] mx-auto text-center flex flex-col px-10 space-y-5">
         <h1 className="txt-gradient md:text-7xl sm:text-5xl text-4xl font-bold ">
-          The secure way to save passwords and more
+          Your encrypted, private, and hackproof vault
         </h1>
-        <p className="text-gray-300 text-2xl">
-          Protect your valuable data from prying eyes. Liso&apos;s secure data
-          vault is the perfect place to store passwords, files and any other
-          information you need to keep safe.
+        <p className="text-gray-600 text-lg md:text-2xl">
+          Protect your valuable data from prying eyes. Liso`s secure data vault
+          is the perfect place to keep passwords, files, and any other
+          information you need to keep safe from unwanted people, hackers, and
+          data leaks.
         </p>
+        <p className="text-gray-700 font-bold text-lg">Liso is not just a vault but also a superior Password Manager.</p>
         <div className="flex gap-2 md:gap-5 flex-wrap mx-auto">
           <button className="btn-elevated" onClick={scrollToDownloadSection}>
             Get Started

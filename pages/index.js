@@ -41,9 +41,9 @@ export default function Home() {
   
   const domain = "liso.dev";
   const url = "https://" + domain;
-  const title = "Liso Password Manager";
+  const title = "Liso - Encrypted Private Vault";
   const description =
-    "Liso is an open-source and encrypted password manager, digital vault, and form filler that's designed to secure your data using modern Web3 technologies.";
+    "Protect your valuable data from prying eyes. Liso's secure data vault is the perfect place to keep passwords, files, and any other data you need to keep safe.";
 
   return (
     <div className="bg-gradient">
@@ -74,7 +74,7 @@ export default function Home() {
         <meta name="twitter:image" content={url + "/opengraph.jpg"} />
 
         <link rel="manifest" href={url + "/manifest.json"} />
-        <title>Open Source & Encrypted Password Manager | Liso</title>
+        <title>Encrypted Private Vault | Liso</title>
       </Head>
 
       <NavBar refDownload={DownloadSectionRef} refPricing={PricingSectionRef} />

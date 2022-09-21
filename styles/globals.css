@@ -16,7 +16,7 @@
 
 @layer components {
   .btn-outlined {
-    @apply bg-transparent hover:bg-gray-800 text-[#02f297] font-bold py-2 rounded-full w-[200px] mx-auto border border-[#02f297];
+    @apply bg-transparent hover:bg-gray-800 text-[#34d094] font-bold py-2 rounded-full w-[200px] mx-auto border border-[#34d094];
   }
 }
 
@@ -28,19 +28,19 @@
 
 @layer components {
   .txt-gradient-2 {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00ff9d] to-[#00765c];
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00ff9d] to-[#007a8d];
   }
 }
 
 @layer components {
   .txt-gradient-3 {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] to-[#00ffb3];
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[#00ff9d] to-[#007a8d];
   }
 }
 
 @layer components {
   .bg-gradient {
-    @apply bg-gradient-to-bl from-[#000000] to-[#102121];
+    @apply bg-gradient-to-bl from-[#ffffff] to-[#ffffff];
   }
 }
 

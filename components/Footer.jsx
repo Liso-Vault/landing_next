@@ -40,7 +40,7 @@ export const Footer = () => {
         />
         <a
           href="mailto:dev@liso.dev"
-          className="text-sm text-white hover:text-green-200 hover:underline"
+          className="text-sm text-gray-700 hover:text-[#27be84] hover:underline"
         >
           Contact
         </a>
@@ -64,7 +64,7 @@ export const Footer = () => {
           data={{
             url: "https://twitter.com/oliverbytes",
             label: " Oliver Martinez",
-            color: "text-[#02f297]",
+            color: "text-gray-700",
           }}
         />
       </p>
@@ -77,8 +77,8 @@ export const LinkNewTab = ({ data }) => {
     <a
       href={data.url}
       className={`${
-        data.color || "text-white"
-      } hover:underline hover:text-[#02f297] text-sm`}
+        data.color || "text-gray-700"
+      } hover:underline hover:text-[#27be84] text-sm`}
       target="_blank"
       rel="noreferrer"
     >

@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Icon from "../assets/icon.png";
 import Image from "next/image";
 
 import * as ga from "../lib/ga";
@@ -31,9 +31,9 @@ export const NavBar = ({ refDownload, refPricing }) => {
   return (
     <div className="flex justify-between items-center h-24 max-w-[1300px] mx-auto px-5">
       <div className="pr-3 min-w-[50px] w-[100px]">
-        <Image src={Logo} alt="Liso Password Manager" />
+        <Image src={Icon} alt="Liso Password Manager" />
       </div>
-      <h1 className="w-full text-2xl md:text-4xl font-bold text-white">Liso</h1>
+      <h1 className="w-full text-3xl md:text-4xl font-bold text-gray-700">Liso</h1>
       <button className="btn-text mr-3" onClick={scrollToPricingSection}>
         Pricing
       </button>
