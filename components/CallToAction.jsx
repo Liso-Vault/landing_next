@@ -19,7 +19,7 @@ export const CallToAction = ({ refDownload }) => {
   return (
     <div className="p-10 max-w-[800px] mx-8 md:mx-20 lg:mx-auto space-y-5 card bg-black text-center">
       <div className="pr-3 w-[200px] mx-auto">
-        <Image src={Logo} alt="Liso Password Manager" />
+        <Image src={Logo} alt="Liso - Encrypted & Private Vault" />
       </div>
       <h1 className="text-3xl font-bold text-center txt-gradient-2">
         Ready to keep your data safe and secure?
