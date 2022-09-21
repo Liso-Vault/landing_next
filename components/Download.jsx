@@ -18,9 +18,9 @@ export const Download = ({ refDownload }) => {
       className="p-10 max-w-[1000px] mx-8 md:mx-20 lg:mx-auto space-y-5 bg-black card"
       ref={refDownload}
     >
-      <h1 className="text-3xl font-bold text-center txt-gradient-2">
+      <h2 className="text-3xl font-bold text-center txt-gradient-2">
         Download Now
-      </h1>
+      </h2>
       <h3 className="text-xl text-center text-gray-300">
         No credit card or sign up is required to get started. free.
       </h3>

@@ -33,7 +33,7 @@ export const NavBar = ({ refDownload, refPricing }) => {
       <div className="pr-3 min-w-[50px] w-[100px]">
         <Image src={Icon} alt="Open Source Encrypted & Private Vault" />
       </div>
-      <h1 className="w-full text-3xl md:text-4xl font-bold text-gray-700">Liso</h1>
+      <h2 className="w-full text-3xl md:text-4xl font-bold text-gray-700">Liso</h2>
       <button className="btn-text mr-3" onClick={scrollToPricingSection}>
         Pricing
       </button>

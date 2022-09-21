@@ -1,9 +1,9 @@
 export const FeatureGrid = ({ data, refFeatures }) => {
   return (
     <div className="max-w-[1300px] lg:mx-auto pt-20" ref={refFeatures}>
-      <h1 className="mb-10 text-4xl font-bold text-center md:text-5xl txt-gradient-3 md:mb-20">
+      <h2 className="mb-10 text-4xl font-bold text-center md:text-5xl txt-gradient-3 md:mb-20">
         More Features
-      </h1>
+      </h2>
 
       <div className="flex flex-wrap justify-center gap-5 gap-y-10">
         {data.map((e, i) => (
