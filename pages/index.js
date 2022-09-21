@@ -58,7 +58,7 @@ export default function Home() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content={title} />
-        <link rel="apple-touch-icon" href={url + "/logo192.png"} />
+        <link rel="apple-touch-icon" href={url + "/apple-touch-icon.png"} />
 
         <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
