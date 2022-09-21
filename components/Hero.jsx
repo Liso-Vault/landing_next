@@ -29,7 +29,7 @@ export const Hero = ({ refDownload, refFeatures }) => {
     <div className="">
       <div className="max-w-[1000px] w-full md:mt-[100px] mt-[40px] mx-auto text-center flex flex-col px-10 space-y-5">
         <h1 className="txt-gradient md:text-7xl sm:text-5xl text-4xl font-bold ">
-          Your hackproof vault for storing sensitive data, passwords and files
+        Your hackproof vault for storing sensitive data, passwords, and files.
         </h1>
         <p className="text-gray-600 text-lg md:text-2xl">
           Protect your valuable data from prying eyes. Liso`s secure data vault
