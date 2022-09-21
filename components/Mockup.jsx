@@ -1,4 +1,4 @@
-import ImgMockup from "../assets/mockup.png";
+import ImgMockup from "../assets/mockup.jpg";
 import Image from "next/image";
 
 export const Mockup = () => {
