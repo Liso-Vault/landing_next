@@ -52,3 +52,6 @@ export const Hero = ({ refDownload, refFeatures }) => {
     </div>
   );
 };
+
+
+mention the templates it can store
