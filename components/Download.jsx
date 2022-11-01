@@ -44,7 +44,7 @@ export const Download = ({ refDownload }) => {
           <GooglePlay variant="Bold" className="mr-2" /> Android
         </a>
         <a
-          href="https://github.com/Liso-Vault/app/releases/download/0.8.0%2B39/Liso_v0.8.0+39-Windows.exe"
+          href="https://github.com/Liso-Vault/app/releases/download/1.0.0%2B42/Liso_v1.0.0+42-Windows.exe"
           onClick={gaTrackEvent("windows")}
           className="btn-elevated flex justify-center w-[250px]"
           target="_blank"
