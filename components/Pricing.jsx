@@ -312,7 +312,7 @@ export const PricingHeader = ({ data, refDownload }) => {
         } w-full`}
         onClick={scrollToDownloadSection}
       >
-        {data.highlighted ? "Try Free For 7 Days" : "Get Started"}
+        {data.highlighted ? "Redeem your FREE Pro Trial" : "Get Started"}
       </button>
     </div>
   );
