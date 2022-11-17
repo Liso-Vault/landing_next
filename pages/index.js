@@ -38,7 +38,7 @@ export default function Home() {
   const DownloadSectionRef = useRef(null);
   const FeaturesSectionRef = useRef(null);
   const PricingSectionRef = useRef(null);
-  
+
   const domain = "liso.dev";
   const url = "https://" + domain;
   const title = "Liso - Encrypted Private Vault";
@@ -75,6 +75,8 @@ export default function Home() {
 
         <link rel="manifest" href={url + "/manifest.json"} />
         <title>Encrypted Private Vault | Liso</title>
+
+        <script async type="text/javascript" src="crisp.js" />
       </Head>
 
       <NavBar refDownload={DownloadSectionRef} refPricing={PricingSectionRef} />

@@ -21,9 +21,6 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b2d1151-3ba9-4ab7-b17a-af7a4a1973ff";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-          
         </Head>
         <body>
           <Main />
