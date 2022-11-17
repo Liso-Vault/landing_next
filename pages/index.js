@@ -75,8 +75,6 @@ export default function Home() {
 
         <link rel="manifest" href={url + "/manifest.json"} />
         <title>Encrypted Private Vault | Liso</title>
-
-        <script async type="text/javascript" src="crisp.js" />
       </Head>
 
       <NavBar refDownload={DownloadSectionRef} refPricing={PricingSectionRef} />
