@@ -2,6 +2,12 @@ export const Footer = () => {
   return (
     <div className="p-10 text-sm text-center text-gray-400">
       <div className="flex flex-wrap justify-center gap-5 p-10">
+      <LinkNewTab
+          data={{
+            url: "https://liso.super.site/giveaway",
+            label: "Free PRO",
+          }}
+        />
         <LinkNewTab
           data={{
             url: "https://github.com/Liso-Vault/app",
