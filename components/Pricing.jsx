@@ -242,7 +242,7 @@ export const Pricing = ({ refPricing, refDownload }) => {
         Simple Pricing
       </h2>
       <h2 className="text-1xl md:text-2xl font-semibold text-center text-gray-700 mb-10 flex justify-center">
-        <span>The most affordable price guaranteed</span>
+        <span>The most value for money guaranteed</span>
         <BsCheck2Circle color="#27be84" className="w-6 h-6 ml-2 my-auto" />
       </h2>
       <div className="flex gap-10 flex-wrap mx-auto w-fit text-gray-700 justify-center">
