@@ -262,9 +262,9 @@ export const Pricing = ({ refPricing, refDownload }) => {
           refDownload={refDownload}
           data={{
             title: "Liso Pro",
-            subTitle: "7 Days Free Trial",
-            subTitle2: "30-DAY MONEY-BACK GUARANTEE",
-            price: "$0.8 / Month",
+            subTitle: "7-Day Free Trial",
+            subTitle2: "100% MONEY-BACK GUARANTEE",
+            price: "$2.49 / Month",
             features: proFeatures,
             highlighted: true,
           }}
@@ -312,7 +312,7 @@ export const PricingHeader = ({ data, refDownload }) => {
         } w-full`}
         onClick={scrollToDownloadSection}
       >
-        {data.highlighted ? "Redeem your FREE Pro Trial" : "Get Started"}
+        {data.highlighted ? "Redeem your FREE Trial" : "Get Started"}
       </button>
     </div>
   );
