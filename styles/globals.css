@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-text {
-    @apply text-white hover:text-[#02f297] font-medium py-2 rounded-full w-[200px] mx-auto;
+    @apply text-[#02f297] hover:text-[#28ffbb] font-medium py-2 rounded-full w-[200px] mx-auto;
   }
 }
 
