@@ -29,22 +29,20 @@ export const Hero = ({ refDownload, refFeatures }) => {
     <div className="">
       <div className="max-w-[1000px] w-full md:mt-[100px] mt-[40px] mx-auto text-center flex flex-col px-10 space-y-5">
         <h1 className="txt-gradient md:text-7xl sm:text-5xl text-4xl font-bold ">
-        Your hackproof vault for storing sensitive data, passwords, and files.
+          The Crypto-Secured Password Manager & 2FA Authenticator
         </h1>
-        <p className="text-gray-600 text-lg md:text-2xl">
-          Protect your valuable data from prying eyes. Liso`s secure data vault
-          is the perfect place to keep passwords, files, and any other
-          information you need to keep safe from unwanted people, hackers, and
-          data leaks.
+        <p className="text-gray-600 dark:text-gray-300 text-lg md:text-2xl">
+          Secure your digital life with Liso's military-grade encryption.
+          Manage passwords, generate 2FA tokens, and protect your crypto seeds—all in one zero-knowledge vault.
         </p>
-        <p className="text-gray-700 font-bold text-lg">
-          Liso is not just a vault but also a superior Password Manager.
+        <p className="text-gray-700 dark:text-gray-200 font-bold text-lg">
+          Your keys, your data, your fortress.
         </p>
         <div className="flex gap-2 md:gap-5 flex-wrap mx-auto">
-          <button className="btn-elevated" onClick={scrollToDownloadSection}>
+          <button className="btn-elevated w-[200px]" onClick={scrollToDownloadSection}>
             Get Started
           </button>
-          <button className="btn-outlined" onClick={scrollToFeaturesSection}>
+          <button className="btn-outlined w-[200px]" onClick={scrollToFeaturesSection}>
             Features
           </button>
         </div>

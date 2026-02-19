@@ -7,7 +7,7 @@ export const FeatureGrid = ({ data, refFeatures }) => {
 
       <div className="flex flex-wrap justify-center gap-5 gap-y-10">
         {data.map((e, i) => (
-          <div className="text-gray-800 w-[300px] space-y-3" key={i}>
+          <div className="text-gray-800 dark:text-gray-200 w-[300px] space-y-3" key={i}>
             {
               <e.image
                 size={100}
@@ -17,7 +17,7 @@ export const FeatureGrid = ({ data, refFeatures }) => {
               />
             }
             <h3 className="text-2xl font-medium text-center py-5">{e.title}</h3>
-            <p className="text-center text-gray-700">{e.body}</p>
+            <p className="text-center text-gray-700 dark:text-gray-400">{e.body}</p>
           </div>
         ))}
       </div>

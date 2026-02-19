@@ -4,19 +4,19 @@
 
 @layer components {
   .btn-text {
-    @apply text-white hover:text-[#02f297] font-medium py-2 rounded-full w-[200px] mx-auto;
+    @apply text-gray-700 dark:text-white hover:text-[#02f297] font-medium py-2 px-4 rounded-full transition-colors duration-200 border border-transparent hover:border-[#02f297] hover:bg-gray-50 dark:hover:bg-gray-800;
   }
 }
 
 @layer components {
   .btn-elevated {
-    @apply bg-[#02f297] hover:bg-[#28ffbb] text-black font-medium py-2 rounded-full w-[200px] mx-auto;
+    @apply bg-[#02f297] hover:bg-[#28ffbb] text-black font-medium py-2 px-8 rounded-full;
   }
 }
 
 @layer components {
   .btn-outlined {
-    @apply bg-transparent hover:bg-gray-800 text-[#34d094] font-bold py-2 rounded-full w-[200px] mx-auto border border-[#34d094];
+    @apply bg-transparent hover:bg-gray-800 text-[#34d094] font-bold py-2 px-8 rounded-full border border-[#34d094];
   }
 }
 
@@ -38,9 +38,15 @@
   }
 }
 
+@layer base {
+  body {
+    @apply dark:bg-gray-900 dark:text-white transition-colors duration-300;
+  }
+}
+
 @layer components {
   .bg-gradient {
-    @apply bg-gradient-to-bl from-[#ffffff] to-[#ffffff];
+    @apply bg-gradient-to-bl from-[#ffffff] to-[#ffffff] dark:from-gray-900 dark:to-gray-800;
   }
 }
 

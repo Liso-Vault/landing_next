@@ -237,15 +237,15 @@ export const Pricing = ({ refPricing, refDownload }) => {
   ];
 
   return (
-    <div ref={refPricing} className="">
+    <div id="pricing" ref={refPricing} className="">
       <h2 className="text-4xl md:text-5xl font-bold text-center txt-gradient-3 mb-3 pt-20">
-        Simple Pricing
+        Transparent Pricing
       </h2>
-      <h2 className="text-1xl md:text-2xl font-semibold text-center text-gray-700 mb-10 flex justify-center">
-        <span>The most value for money guaranteed</span>
+      <h2 className="text-1xl md:text-2xl font-semibold text-center text-gray-700 dark:text-gray-200 mb-10 flex justify-center">
+        <span>Security shouldn't break the bank</span>
         <BsCheck2Circle color="#27be84" className="w-6 h-6 ml-2 my-auto" />
       </h2>
-      <div className="flex gap-10 flex-wrap mx-auto w-fit text-gray-700 justify-center">
+      <div className="flex gap-10 flex-wrap mx-auto w-fit text-gray-700 dark:text-gray-300 justify-center">
         {/* FREE */}
         <PricingHeader
           refDownload={refDownload}
@@ -289,27 +289,25 @@ export const PricingHeader = ({ data, refDownload }) => {
 
   return (
     <div
-      className={`${
-        data.highlighted
-          ? "border-4 border-[#27be84]"
-          : "border border-gray-500"
-      } rounded-[20px] p-5 space-y-2`}
+      className={`${data.highlighted
+        ? "border-4 border-[#27be84]"
+        : "border border-gray-500"
+        } rounded-[20px] p-5 space-y-2`}
     >
       <h3 className={`font-bold text-2xl text-[#27be84]`}>{data.title}</h3>
       <h3 className="font-bold text-4xl">{data.price}</h3>
       <h6 className="font-bold text-white card bg-gray-500 w-fit px-5 py-1">
         {data.subTitle}
       </h6>
-      <h6 className="text-xs font-semibold text-gray-700">{data.subTitle2}</h6>
+      <h6 className="text-xs font-semibold text-gray-700 dark:text-gray-400">{data.subTitle2}</h6>
       <ul className="space-y-2 py-5">
         {data.features.map((e, i) => (
           <FeatureItem data={e} key={i} />
         ))}
       </ul>
       <button
-        className={`${
-          data.highlighted ? "btn-elevated" : "btn-outlined"
-        } w-full`}
+        className={`${data.highlighted ? "btn-elevated" : "btn-outlined"
+          } w-full`}
         onClick={scrollToDownloadSection}
       >
         {data.highlighted ? "Redeem your FREE Trial" : "Get Started"}
@@ -330,7 +328,7 @@ export const FeatureItem = ({ data }) => {
   return (
     <div className="flex text-sm md:text-base">
       <data.icon size={25} color="#27be84" />
-      <span className="ml-5 min-w-[190px] text-gray-700">{data.feature}</span>
+      <span className="ml-5 min-w-[190px] text-gray-700 dark:text-gray-300">{data.feature}</span>
       <span className="text-[#27be84] font-semibold mx-auto">{value}</span>
     </div>
   );

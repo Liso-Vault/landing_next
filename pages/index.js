@@ -12,6 +12,8 @@ import { Footer } from "../components/Footer";
 import { FeatureGrid } from "../components/FeatureGrid";
 import { CallToAction } from "../components/CallToAction";
 import { Pricing } from "../components/Pricing";
+import { TrustedBy } from "../components/TrustedBy";
+import { Testimonials } from "../components/Testimonials";
 
 // ICONS
 import {
@@ -79,19 +81,21 @@ export default function Home() {
 
       <NavBar refDownload={DownloadSectionRef} refPricing={PricingSectionRef} />
       <Hero refDownload={DownloadSectionRef} refFeatures={FeaturesSectionRef} />
+      <Spacer classes="h-[30px]" />
+      <TrustedBy />
       <Spacer classes="h-[50px] md:h-[100px]" />
       <Mockup />
       <Spacer classes="h-[50px] md:h-[100px]" />
       <FeatureRow
         refFeatures={FeaturesSectionRef}
         data={{
-          title: "Access and manage your passwords on any device",
-          body: "Liso is available for download on iPhone, iPad, Android, Mac, and Windows. Access everything on the go, even when you're offline.",
+          title: "Manage Passwords & 2FA",
+          body: "Stop using weak passwords. Liso generates strong credentials and stores them securely. Plus, replace your authenticator app with our built-in 2FA token generator.",
           image: Devices,
           subFeatures: [
             {
-              title: "Fast & Reliable Syncing",
-              body: "Liso automatically syncs your vault. Or manually sync with a single click of a button.",
+              title: "Integrated 2FA",
+              body: "Generate Time-based One-Time Passwords (TOTP) directly within Liso. No need for a separate app.",
             },
           ],
         }}
@@ -99,34 +103,34 @@ export default function Home() {
       <FeatureRow
         data={{
           reversed: true,
-          title: "Secure and easy sharing",
-          body: "Conveniently share your vault and files with your friends, colleagues, or family. Worry free.",
+          title: "Secure Your Crypto Assets",
+          body: "Safely store your recovery phrases, private keys, and cold storage backups in an encrypted vault that only you control.",
           image: Share,
           subFeatures: [
             {
-              title: "AES-256 Encryption",
-              body: "Liso uses the Advanced Encryption Standard + CBC with PKCS7 Padding to protect your vault and files. It means your data is always safe and accessible only by you.",
+              title: "Seed Phrase Storage",
+              body: "Specifically designed fields for 12 and 24-word recovery phrases ensure your crypto assets are never lost.",
             },
           ],
         }}
       />
       <FeatureRow
         data={{
-          title: "Powered by Web3 Technology",
-          body: "Liso is designed and built with modern Web3 technology. It is the 3rd generation of the evolution of web technologies. It also allows your vault to be bullet-proof from hackers' data leakage.",
+          title: "Built on Web3 Security",
+          body: "Leveraging modern cryptographic standards to ensure your data is mathematically impossible to breach without your master key.",
           image: ShieldTick,
           subFeatures: [
             {
-              title: "Zero Sign-Up with Zero-Knowledge",
-              body: "Emails, Phone Numbers, and even Usernames are a thing of the past with Liso. None of that is required to get set up.",
+              title: "Zero-Knowledge",
+              body: "We have zero access to your data. Your vault is decrypted only on your device.",
             },
             {
-              title: "Trustless & Censorship Resistant",
-              body: "There's no central authority that you need to trust your data. Not even us developers. Only you and yourself have the key to decrypt and access your vault.",
+              title: "Self-Custody",
+              body: "Just like a crypto wallet, you own your keys. Your data is yours and yours alone.",
             },
             {
-              title: "Crypto Wallet - Built-in",
-              body: "Conveniently store and manage supported cryptocurrencies and NFTs. All secured and built-in to Liso.",
+              title: "Unified Digital Vault",
+              body: "One secure location for passwords, identity, finance, and crypto.",
             },
           ],
         }}
@@ -136,108 +140,83 @@ export default function Home() {
       <FeatureGrid
         data={[
           {
-            title: "Autofill",
-            body: "Conveniently autofill and save your credentials effortlessly (Android).",
+            title: "Seamless Autofill",
+            body: "Log in to your favorite apps and websites instantly without typing a thing.",
             image: RulerPen,
           },
           {
-            title: "Self Hostable",
-            body: "Use your S3 provider config to self-host syncing of your vaults.",
+            title: "Your Data, Your Infrastructure",
+            body: "Prefer to host your own data? Configure your own S3 provider for complete control.",
             image: Data,
           },
           {
-            title: "Works Offline",
-            body: "Whether you're connected or not to the internet. Liso just works out of the box.",
+            title: "Offline First",
+            body: "Access your vault anytime, anywhere. No internet connection required.",
             image: Airplane,
           },
           {
-            title: "Biometric Auth",
-            body: "Fast and secure access to your vault with Fingerprint or Face biometrics support.",
+            title: "Biometric Security",
+            body: "Unlock your vault instantly using FaceID, TouchID, or Fingerprint.",
             image: FingerCricle,
           },
-          // {
-          //   title: "Sync Devices",
-          //   body: "Enjoy automatic syncing between all your devices",
-          //   image: Refresh,
-          // },
           {
-            title: "Native App",
-            body: "Liso is not just another web app. It's built with native technologies to make it super-fast and efficient.",
+            title: "Native Performance",
+            body: "Built with native technologies for a blazing fast and responsive experience.",
             image: Cpu,
           },
           {
-            title: "Generate Passwords",
-            body: "Quickly generate long and strong passwords that no one can easily guess.",
+            title: "Strong Password Generator",
+            body: "Create uncrackable passwords with customizable length and complexity.",
             image: Lock,
           },
-
-          // {
-          //   title: "Shared Vaults",
-          //   body: "Effortlessly share your items with other people",
-          //   image: Share,
-          // },
           {
-            title: "Encryption Tool",
-            body: "Protect files with military-grade encryption before sending them to friends or co-workers.",
+            title: "File Encryption",
+            body: "Encrypt sensitive documents and photos before sharing them insecurely.",
             image: ShieldTick,
           },
           {
-            title: "Decentralized Storage",
-            body: "Upload photos, videos, documents, and files with automatic encryption to our secure & decentralized cloud storage.",
+            title: "Private Cloud Storage",
+            body: "Securely store photos, videos, and documents in the encrypted cloud.",
             image: DocumentCloud,
           },
-          // {
-          //   title: "Zero-Knowledge",
-          //   body: "No phone numbers, emails, or personal identifiable information is required to sign up",
-          //   image: Book,
-          // },
           {
-            title: "Open Source",
-            body: "Ensure the integrity and security by self-auditing and verifying the code.",
+            title: "Auditable & Open Source",
+            body: "Our code is open for anyone to inspect. Transparency breeds trust.",
             image: Code1,
           },
-          // {
-          //   title: "Cross Platform",
-          //   body: "Available on iPhone, iPad, MacOS, Android, and Windows",
-          //   image: Devices,
-          // },
           {
-            title: "Password Health",
-            body: "Monitor and update weak/re-used passwords.",
+            title: "Security Dashboard",
+            body: "Identify weak or reused passwords and improve your overall security score.",
             image: Health,
           },
           {
-            title: "Passphrase Generator",
-            body: "Generate a 12 or 24-word mnemonic seed phrase for your Crypto Wallets.",
+            title: "Crypto Seed Generator",
+            body: "Generate and store 12 or 24-word recovery phrases for your wallets.",
             image: Key,
           },
           {
-            title: "OTP Authenticator",
-            body: "Securely store and generate 2FA codes for your accounts, apps, and websites.",
+            title: "2FA Authenticator",
+            body: "Replace your separate authenticator app with Liso's built-in OTP generator.",
             image: PasswordCheck,
           },
-          // {
-          //   title: "Crypto Wallet",
-          //   body: "Securely store supported cryptocurrencies and NFTs with our built-in wallet",
-          //   image: Wallet,
-          // },
           {
-            title: "Unlimited Vaults",
-            body: "Keep everything organized with separate vaults for work, personal, or family.",
+            title: "Unlimited Organization",
+            body: "Create unlimited vaults to separate work, personal, and family data.",
             image: Strongbox2,
           },
           {
-            title: "Themes",
-            body: "Switch to Dark or Light mode or let the system choose automatically.",
+            title: "Personalized Experience",
+            body: "Choose between Light, Dark, or System themes to match your preference.",
             image: Moon,
           },
           {
-            title: "Customizable",
-            body: "Create custom fields, categories, and vaults for better organization. Liso also supports the re-ordering of Form Fields for more flexibility.",
+            title: "Flexible Data Structure",
+            body: "Customize your items with custom fields and categories to fit your needs.",
             image: Edit,
           },
         ]}
       />
+      <Testimonials />
       {/* <Spacer classes="h-[50px] md:h-[100px]" /> */}
       <Pricing
         refPricing={PricingSectionRef}

@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes'
 import "../styles/globals.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -22,7 +23,11 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system">
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
 
 export default MyApp;

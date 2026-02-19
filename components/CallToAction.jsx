@@ -22,14 +22,14 @@ export const CallToAction = ({ refDownload }) => {
         <Image src={Logo} alt="Liso - Encrypted & Private Vault" />
       </div>
       <h2 className="text-3xl font-bold text-center txt-gradient-2">
-        Ready to keep your data safe and secure?
+        Take Control of Your Digital Privacy
       </h2>
       <h3 className="text-xl text-center text-gray-200">
-        Liso is the best way to keep your data safe and secure. Get started for
-        free today and see the difference for yourself.
+        Join thousands of users who trust Liso with their most sensitive data.
+        Start your journey to total internet security today.
       </h3>
       <button
-        className="btn-elevated md:w-[250px]"
+        className="btn-elevated w-[200px] md:w-[250px]"
         onClick={scrollToDownloadSection}
       >
         Free Download
